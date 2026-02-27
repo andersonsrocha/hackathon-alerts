@@ -7,8 +7,8 @@ COPY src/HackathonAlerts.Api/HackathonAlerts.Api.csproj src/HackathonAlerts.Api/
 COPY src/HackathonAlerts.Application/HackathonAlerts.Application.csproj src/HackathonAlerts.Application/
 COPY src/HackathonAlerts.Data/HackathonAlerts.Data.csproj src/HackathonAlerts.Data/
 COPY src/HackathonAlerts.Domain/HackathonAlerts.Domain.csproj src/HackathonAlerts.Domain/
-COPY src/HackathonAlerts.Security/HackathonAlerts.Security.csproj src/HackathonAlerts.Security/
-
+COPY src/HackathonAlerts.NewRelicEvent/HackathonAlerts.NewRelicEvent.csproj src/HackathonAlerts.NewRelicEvent/
+    
 # Copiar arquivos
 COPY src/ src/
 
