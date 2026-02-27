@@ -28,7 +28,7 @@ spec:
             - name: RabbitMQ__HostName
               value: "rabbitmq.messaging.svc.cluster.local"
             - name: RabbitMQ__QueueName
-              value: "payments"
+              value: "alert.queue"
             - name: Jwt__Issuer
               valueFrom:
                 configMapKeyRef:
@@ -39,13 +39,18 @@ spec:
                 configMapKeyRef:
                   name: alert-config
                   key: JWT_AUDIENCE
+            - name: ServiceClients__NewRelic__BaseUrl
+              valueFrom:
+                configMapKeyRef:
+                  name: alert-config
+                  key: NEW_RELIC_BASE_URL
             - name: ENVIRONMENT
               valueFrom:
                 configMapKeyRef:
                   name: alert-config
                   key: ENVIRONMENT
 
-            - name: ConnectionStrings__SqlConnection
+            - name: ConnectionStrings__MongoConnection
               valueFrom:
                 secretKeyRef:
                   name: alert-secrets
@@ -70,5 +75,18 @@ spec:
                 secretKeyRef:
                   name: rabbitmq-secrets
                   key: password
-      imagePullSecrets:
-        - name: credentials
+            - name: Services
+              valueFrom:
+                secretKeyRef:
+                  name: alert-secrets
+                  key: services
+            - name: ServiceClients__NewRelic__AccountId
+              valueFrom:
+                secretKeyRef:
+                  name: alert-secrets
+                  key: accountid
+            - name: ServiceClients__NewRelic__ApiKey
+              valueFrom:
+                secretKeyRef:
+                  name: alert-secrets
+                  key: apikey
