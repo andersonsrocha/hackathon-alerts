@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: alert-container
-          image: acr96.azurecr.io/alert:latest
+          image: andersonsrocha/alert:latest
           ports:
             - containerPort: 8080
           resources:
