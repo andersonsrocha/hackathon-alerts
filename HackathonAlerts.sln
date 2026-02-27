@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{91A959DE-3DF6-4FF2-9B56-AC645A6D7601}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{94F78DE2-2EFF-4099-9374-1C14BD3B5DE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{56FCB35D-D51E-4E1D-9ED6-731C2A0A0632}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{CACACDCF-4EC8-426A-A65A-C60F3137DF9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonAlerts.Api", "src\HackathonAlerts.Api\HackathonAlerts.Api.csproj", "{97E4B1A6-2ABF-4BE2-80FD-7E821E37F863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonAlerts.Application", "src\HackathonAlerts.Application\HackathonAlerts.Application.csproj", "{8F9BAC0C-A8ED-40C9-8883-1FE3EBC8E845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonAlerts.Domain", "src\HackathonAlerts.Domain\HackathonAlerts.Domain.csproj", "{2D1BDCB4-E72F-48D5-A677-975C9DC3BB9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{89059CF5-DD2F-4C42-AD61-079D00DD5F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonAlerts.Data", "src\HackathonAlerts.Data\HackathonAlerts.Data.csproj", "{9D0FC03F-1E3E-46B2-B023-FBBFAD210294}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{66FD536B-CF94-4AA9-AEC6-8FA4338BF4D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonAlerts.NewRelicEvent", "src\HackathonAlerts.NewRelicEvent\HackathonAlerts.NewRelicEvent.csproj", "{9A42E199-B349-45C5-A1A4-A37A721F2F29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{E7F637E0-932C-4F5D-A324-BB0D6F9FCCE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonAlerts.Application.Test", "tests\HackathonAlerts.Application.Test\HackathonAlerts.Application.Test.csproj", "{2DD966A6-695D-4654-8F1F-3C02DEAA4EA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97E4B1A6-2ABF-4BE2-80FD-7E821E37F863} = {91A959DE-3DF6-4FF2-9B56-AC645A6D7601}
+		{8F9BAC0C-A8ED-40C9-8883-1FE3EBC8E845} = {56FCB35D-D51E-4E1D-9ED6-731C2A0A0632}
+		{2D1BDCB4-E72F-48D5-A677-975C9DC3BB9C} = {94F78DE2-2EFF-4099-9374-1C14BD3B5DE9}
+		{89059CF5-DD2F-4C42-AD61-079D00DD5F10} = {CACACDCF-4EC8-426A-A65A-C60F3137DF9E}
+		{9D0FC03F-1E3E-46B2-B023-FBBFAD210294} = {89059CF5-DD2F-4C42-AD61-079D00DD5F10}
+		{66FD536B-CF94-4AA9-AEC6-8FA4338BF4D6} = {CACACDCF-4EC8-426A-A65A-C60F3137DF9E}
+		{9A42E199-B349-45C5-A1A4-A37A721F2F29} = {66FD536B-CF94-4AA9-AEC6-8FA4338BF4D6}
+		{2DD966A6-695D-4654-8F1F-3C02DEAA4EA7} = {E7F637E0-932C-4F5D-A324-BB0D6F9FCCE4}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97E4B1A6-2ABF-4BE2-80FD-7E821E37F863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E4B1A6-2ABF-4BE2-80FD-7E821E37F863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E4B1A6-2ABF-4BE2-80FD-7E821E37F863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E4B1A6-2ABF-4BE2-80FD-7E821E37F863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9BAC0C-A8ED-40C9-8883-1FE3EBC8E845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9BAC0C-A8ED-40C9-8883-1FE3EBC8E845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9BAC0C-A8ED-40C9-8883-1FE3EBC8E845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9BAC0C-A8ED-40C9-8883-1FE3EBC8E845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1BDCB4-E72F-48D5-A677-975C9DC3BB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1BDCB4-E72F-48D5-A677-975C9DC3BB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1BDCB4-E72F-48D5-A677-975C9DC3BB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1BDCB4-E72F-48D5-A677-975C9DC3BB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0FC03F-1E3E-46B2-B023-FBBFAD210294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0FC03F-1E3E-46B2-B023-FBBFAD210294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0FC03F-1E3E-46B2-B023-FBBFAD210294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0FC03F-1E3E-46B2-B023-FBBFAD210294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A42E199-B349-45C5-A1A4-A37A721F2F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A42E199-B349-45C5-A1A4-A37A721F2F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A42E199-B349-45C5-A1A4-A37A721F2F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A42E199-B349-45C5-A1A4-A37A721F2F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD966A6-695D-4654-8F1F-3C02DEAA4EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD966A6-695D-4654-8F1F-3C02DEAA4EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD966A6-695D-4654-8F1F-3C02DEAA4EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD966A6-695D-4654-8F1F-3C02DEAA4EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
