@@ -75,17 +75,12 @@ spec:
                 secretKeyRef:
                   name: rabbitmq-secrets
                   key: password
-            - name: Services
-              valueFrom:
-                secretKeyRef:
-                  name: alert-secrets
-                  key: services
-            - name: ServiceClients__NewRelic__AccountId
+            - name: Service__NewRelic__AccountId
               valueFrom:
                 secretKeyRef:
                   name: alert-secrets
                   key: accountid
-            - name: ServiceClients__NewRelic__ApiKey
+            - name: Service__NewRelic__ApiKey
               valueFrom:
                 secretKeyRef:
                   name: alert-secrets
